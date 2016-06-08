@@ -7,6 +7,8 @@
 
   {{> hello}}
   {{> info}}
+  
+  
 </body>
 
 <template name="hello">
@@ -22,4 +24,8 @@
     <li><a href="https://docs.meteor.com">Read the Docs</a></li>
     <li><a href="https://forums.meteor.com">Discussions</a></li>
   </ul>
+</template>
+
+<template name="insertBookForm">
+  {{> quickForm collection="Books" id="insertBookForm" type="insert"}}
 </template>
